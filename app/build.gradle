@@ -1,0 +1,60 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    signingConfigs {
+        siginJIM {
+            storeFile file('../keystore.jks')
+            storePassword '408563m'
+            keyAlias 'jimApk'
+            keyPassword '408563m'
+        }
+    }
+
+    compileSdkVersion 31
+    buildToolsVersion "31.0.0"
+
+    defaultConfig {
+        applicationId "com.jim.tv"
+        minSdkVersion 17
+        targetSdkVersion 31
+        versionCode 4
+        versionName "2.0"
+
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.siginJIM
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+        dataBinding = true
+    }
+}
+
+dependencies {
+    implementation "androidx.multidex:multidex:2.0.1"
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
+
+    implementation "androidx.activity:activity-ktx:1.4.0"
+
+    implementation 'com.google.android.material:material:1.5.0'
+
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:11.0.1'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.6.10"
+
+}

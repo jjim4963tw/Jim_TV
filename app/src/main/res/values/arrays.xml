@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="video_name_arrays">
+        <item>@string/video_tvbs</item>
+        <item>@string/video_ebc</item>
+        <item>@string/video_set</item>
+        <item>@string/video_cti</item>
+        <item>@string/video_taiwan</item>
+        <item>@string/video_cts</item>
+        <item>@string/video_global</item>
+    </array>
+
+    <array name="video_id_arrays">
+        <item>pZC2WtyUtr4</item>
+        <item>HIbV2WRek14</item>
+        <item>EB4g7wecgTI</item>
+        <item>kpuII1zQ4kI</item>
+        <item>xL0ch83RAK8</item>
+        <item>wM0g8EoUZ_E</item>
+        <item>B7Zp3d6xXWw</item>
+    </array>
+</resources>

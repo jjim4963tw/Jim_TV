@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TV</string>
+
+    <string name="video_tvbs">TVBS 新聞台</string>
+    <string name="video_ebc">東森新聞台</string>
+    <string name="video_set">三立新聞台</string>
+    <string name="video_cti">中天新聞台</string>
+    <string name="video_taiwan">台視新聞台</string>
+    <string name="video_cts">華視新聞台</string>
+    <string name="video_global">寰宇新聞台</string>
+</resources>
